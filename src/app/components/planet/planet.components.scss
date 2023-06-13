@@ -1,0 +1,25 @@
+
+.planets {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    margin: 10px;
+    padding: 20px 10px 5px;
+    color: rgb(247, 234, 57);
+    border-radius: 10px;
+    border: 1px solid #EFF1EC80;
+    background-color: #75777594;
+    align-items: center;
+}
+.imgPlan {
+    border-radius: 50%;
+}
+.description {
+    color: lightyellow;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.planet-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

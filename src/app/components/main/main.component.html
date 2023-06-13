@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <div class="max-w-4xl container mx-auto pt-5">
+    <h2 class="header">Star Wars Planets</h2>
+    <div class="flex flex-wrap gap-1.5 justify-center">
+      <planet-component
+        *ngFor="let planet of planets?.results"
+        class="flex flex-wrap justify-center"
+        [planet]="planet"
+        (click)="openCurrentPlanet(planet)"
+      ></planet-component>
+    </div>
+    <div class="pagWrapper">
+      <a class="prev text-white" (click)="prevPage()">Prev </a>
+      <span class="page text-white">{{page}}</span>
+      <a class="next text-white" (click)="nextPage()"> Next</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+.header {
+    padding: 15px;
+    color: rgb(247, 234, 57);
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+}
+.pagWrapper {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+.page {
+    display: inline-block;
+    margin: 40px;
+    color: rgb(247, 234, 57);
+    cursor: pointer;
+}
+.next {
+    cursor: pointer;
+    color: rgb(247, 234, 57);
+}
+.prev {
+    cursor: pointer;
+    color: rgb(247, 234, 57);
+}
+.prev:hover {
+    opacity: 0.8s;
+    transition: 0.4s;
+}
+planet-component:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+    cursor: pointer;
+}

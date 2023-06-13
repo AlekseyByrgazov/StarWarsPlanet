@@ -1,0 +1,46 @@
+<div class="max-w-4xl container mx-auto pt-5">
+    <h2 class="header text-white">{{planetDetail.name}}</h2>
+    <div class="conteiner-info">
+        <div class="left-side">
+            <div class="wrapper-planet-card">
+                <h2 class="header-card">About Planet</h2>
+                <p class="description-card">Gravity: {{planetDetail.gravity}}</p>
+                <p class="description-card">Surface water: {{planetDetail.surface_water}}</p>
+                <p class="description-card">Terrain: {{planetDetail.terrain}}</p>
+                <p class="description-card">Population: {{planetDetail.population}}</p>
+            </div>
+            <a routerLink="/main" class="link">Go back</a>
+        </div>
+        <div class="right-side">
+            <div class="wrapper-label">
+                <label class="checkbox-other">
+                    <input type="radio" name="gender" checked (click)="filterGender('all')">
+                    <span class="check">All</span>
+                </label>
+                <label class="checkbox-other">
+                    <input type="radio" name="gender" (click)="filterGender('female')">
+                    <span class="check">Female</span>
+                </label>
+                <label class="checkbox-other">
+                    <input type="radio" name="gender" (click)="filterGender('male')">
+                    <span class="check">Male</span>
+                </label>
+                <label class="checkbox-other">
+                    <input type="radio" name="gender" (click)="filterGender('n/a')">
+                    <span class="check">Droid</span>
+                </label>
+            </div>  
+            <div class="wrapper-citizen-card">
+                <div class="planet-citizens" *ngFor="let person of residents; let i = index">
+                    <div class="header-card">{{person.name}}</div>
+                    <div class="description-card">Sex: {{person.gender}}</div>
+                    <div class="description-card">Eye: {{person.eye_color}}</div>
+                    <div class="description-card">Hair: {{person.hair_color}}</div>
+                    <div class="description-card">Height: {{person.height}} cm</div>
+                    <div class="description-card">BY: {{person.birth_year}}</div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</div>
+
